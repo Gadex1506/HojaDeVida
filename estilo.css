@@ -1,0 +1,296 @@
+@import url('https://fonts.googleapis.com/css2?family=Righteous&family=Work+Sans:wght@100;300;400;600;800&display=swap');
+*{
+    box-sizing: border-box;
+    font-family: 'Work Sans';
+    margin: 0%;
+    padding: 0%;
+}
+html{
+    /* Permite deslizar cuando se haga click en los links del menu */
+    scroll-behavior: smooth;
+}
+
+/* Menu */
+.contenedor-header{
+    background: #202425;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 99;
+}
+
+.contenedor-header header{
+    max-width: 1100px;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 20px;
+}
+
+.contenedor-header header .logo a{
+    font-family: 'Righteous';
+    font-size: 36px;
+    color: #35EF3B;
+    text-decoration: none;
+}
+
+.contenedor-header header ul{
+    display: flex;
+    list-style: none;
+}
+
+.contenedor-header header nav ul li a{
+    text-align: none;
+    color: white;
+    margin: 0 15px;
+    padding: 3px;
+    transition: .5s;
+    text-decoration: none;
+}
+
+.contenedor-header header nav ul li a:hover{
+    color: #35EF3B;
+}
+
+.nav-responsive{
+    background-color: #35EF3B;
+    color: white;
+    padding: 5px 10px;
+    border-radius: 8px;
+    cursor: pointer;
+    display: none;
+}
+
+/* INICIO */
+
+section{
+    min-height: 100vh;
+    padding: 10rem 9% 2rem;
+}
+
+.inicio{
+    background: linear-gradient(to top, rgba(27, 28, 29, 0.7), rgb(26, 27, 27)),
+    url(Imagenes/Landscape/Isaac.jpg);
+    background-size: cover;
+    height: 100vh;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.inicio-contenido h3{
+    font-size: 2.5rem;
+    font-weight: 700;
+}
+
+.inicio-contenido h1{
+    font-size: 4rem;
+    font-family: 'Righteous';
+    font-weight: 700;
+    line-height: 1.2;
+}
+
+.inicio-contenido p{
+    font-size: 1.2rem;
+}
+
+.inicio-contenido h3:nth-of-type(2){
+    margin-bottom: 2rem;
+}
+
+#carrera{
+    color: #35EF3B;
+}
+
+.inicio-img img{
+    width: 25vw;
+}
+
+.redes-sociales a{
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 3.5rem;
+    height: 3.5rem;
+    background: transparent;
+    border: .2rem solid #35EF3B;
+    border-radius: 50%;
+    font-size: 1.6rem;
+    color: #35EF3B;
+    margin: 3rem 1.5rem 3rem 0;
+    transition: .5s ease;
+}
+
+.redes-sociales a:hover{
+    background: #35EF3B;
+    color: white;
+    box-shadow: 0 0 1rem #35EF3B;
+}
+
+/* ACERCA DE MI */ 
+
+.acerca_de_mi{
+    background-color: #202425;
+    color: white;
+    padding: 50px 20px;
+}
+
+.acerca_de_mi .contenido_acercademi{
+    max-width: 1100px;
+    margin: auto;
+}
+
+.acerca_de_mi h2{
+    font-size: 48px;
+    font-family: 'Righteous';
+    text-align: center;
+    padding: 20px 0;
+}
+
+.acerca_de_mi .contenido_acercademi{
+    font: 18px;
+    line-height: 22px;
+    margin-bottom: 20px;
+}
+
+.acerca_de_mi .contenido_acercademi p span{
+    color: #35EF3B;
+    font-weight: bold;
+}
+
+.acerca_de_mi .fila{
+    display: flex;
+}
+
+.acerca_de_mi .col{
+    width: 50%;
+}
+
+.acerca_de_mi .col h3{
+    font-size: 28px;
+    font-family: 'Righteous';
+    margin-bottom: 25px;
+}
+
+.acerca_de_mi .col ul{
+    list-style: none;
+}
+
+.acerca_de_mi .col ul li{
+    margin: 12px 0;
+}
+
+.acerca_de_mi .col ul li strong{
+    color: #35EF3B;
+    width: 130px;
+}
+
+.acerca_de_mi .fila .col .contenedor-intereses{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.acerca_de_mi .fila .col .contenedor-intereses .intereses{
+    width: 124px;
+    height: 124px;
+    background-color: #252a2e;
+    border-radius: 10px;
+    margin: 0 15px 15px 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    transition: .3s;
+}
+
+.acerca_de_mi .fila .col .contenedor-intereses .intereses span{
+    text-align: center;
+}
+
+.acerca_de_mi .fila .col .contenedor-intereses .intereses i{
+    font-size: 30px;
+    margin-bottom: 10px;
+    line-height: 1.3;
+}
+
+.acerca_de_mi .fila .col .contenedor-intereses .intereses:hover{
+    background-color: #35EF3B;
+    cursor: pointer;
+}
+
+/* HABILIDADES */
+
+.habilidades{
+    background-color: #202425;
+    color: white;
+    padding: 50px 20px;
+}
+
+.habilidades .contenedorglobal-habilidades{
+    text-align: center;
+}
+
+.habilidades .contenido-habilidades{
+    display: inline-block;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    gap: 2rem;
+}
+
+.habilidades h2{
+    font-size: 48px;
+    font-family: 'Righteous';
+    text-align: center;
+    padding: 20px 0;
+}
+
+.habilidades .contenido-habilidades .habilidades-lista{
+    width: 500px;
+    height: 500px;
+    background-color: #252a2e;
+    border-radius: 2rem;
+    margin: 0 15px 15px 0;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    border: .2rem solid #202425;
+    padding: 3rem 2rem 4rem;
+}
+
+.habilidades-lista i{
+    font-size: 7rem;
+    color: #35EF3B;
+    line-height: 1.3;
+}
+
+.habilidades-lista h3{
+    font-size: 2rem;
+}
+
+.habilidades p{
+    font-size: 1.2rem;
+    margin: 1rem 0 2.5rem;
+}
+
+.btn{
+    display: inline-block;
+    padding: 1rem 2.8rem;
+    background: #35EF3B;
+    border-radius: 4rem;
+    box-shadow: 0 0 1rem #35EF3B;
+    font-size: 2;
+    color: white;
+    letter-spacing: .1rem;
+    font-weight: 600;
+    text-decoration: none;
+    transition: .7s ease;
+}
+
+.btn:hover{
+    box-shadow: none;
+}
