@@ -15,16 +15,16 @@
             <div class="logo">
                 <a href="#">Jonathan</a>
             </div>
-            <nav id="nav">
+            <nav id="nav" class="responsive">
                 <ul>
-                    <li><a href="#inicio">INICIO</a></li>
-                    <li><a href="#acercademi">ACERCA DE MI</a></li>
-                    <li><a href="#habilidades">HABILIDADES</a></li>
-                    <li><a href="#experiencia">EXPERIENCIA</a></li>
-                    <li><a href="#portafolio">PORTAFOLIO</a></li>
+                    <li><a href="#inicio" onclick="seleccionar()">INICIO</a></li>
+                    <li><a href="#acercademi" onclick="seleccionar()">ACERCA DE MI</a></li>
+                    <li><a href="#habilidades" onclick="seleccionar()">HABILIDADES</a></li>
+                    <li><a href="#experiencia" onclick="seleccionar()">EXPERIENCIA</a></li>
+                    <li><a href="#portafolio" onclick="seleccionar()">PORTAFOLIO</a></li>
                 </ul>
             </nav>
-            <div class="nav-responsive">
+            <div class="nav-responsive" onclick="mostrarOcultarMenu()">
                 <i class="fa-solid fa-bars"></i>
             </div>
         </header>
@@ -36,13 +36,8 @@
             <h3>Hola, mi nombre es</h3>
             <h1>Jonathan David Torres</h1>
             <h3>Y soy <span id="carrera"> Desarrollador de Videojuegos</span></h3>
-            <br>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
-            Quibusdam quisquam voluptate est velit odit nam voluptatem 
-            reprehenderit unde dolorem iste dolores, eaque recusandae fugiat. 
-            Debitis vero iusto quasi optio aut!</p>
             <div class="redes-sociales">
-                <a href="#"><i class="fa-brands fa-github"></i></a>
+                <a href="https://github.com/Gadex1506?tab=repositories" target="_blank"><i class="fa-brands fa-github"></i></a>
                 <a href="#"><i class="fa-brands fa-instagram"></i></a>
                 <a href="#"><i class="fa-brands fa-facebook"></i></a>
             </div>
@@ -55,12 +50,13 @@
     </section>
 
     <!-- ACERCA DE MI -->
-    <section class="acerca_de_mi" id="acerca_de_mi">
-        <div class="contenido_acercademi">
+    <section class="acercademi" id="acercademi">
+        <div class="contenido-acercademi">
             <h2>Acerca de mi</h2>
-            <p><span>Hola, soy Jonathan Torres.</span> Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                Ad eveniet ut, quidem repellendus voluptates minus unde, sed esse molestiae beatae expedita, 
-                ea veniam recusandae facilis nobis rem in! Natus, distinctio!</p>
+            <br>
+            <p><span>Hola, soy Jonathan Torres.</span> Desarrollador de videojuegos, 
+                con enfasis en programación de aplicaciones y experiencias inmersivas en 3D, 2D, realidad
+                virtual (VR) y realidad aumentada (AR).</p>
                 <br>
                 <div class="fila">
                     <!-- Datos personales -->
@@ -126,17 +122,17 @@
     <!-- HABILIDADES -->
     <section class="habilidades" id="habilidades">
         <h2 class="heading"> Habilidades </h2>
-
+        <br>
 
         <div class="contenedorglobal-habilidades">
             <div class="contenido-habilidades">
                 <div class="habilidades-lista">
                     <i class="fa-brands fa-unity"></i>
                     <h3>Desarrollo de videojuegos</h3>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
-                        Maiores dicta odio at inventore nisi officiis quod, sed quibusdam fugiat 
-                        voluptas fugit placeat. Architecto, repudiandae et laboriosam impedit delectus 
-                        nostrum deserunt.</p>
+                    <p>Desarrollo de videojuegos tanto en 3D como en 2D en Unity durante algunas
+                    participaciones en eventos conocidos como Game Jams, no solamente
+                    a nivel nacional sino internacional también.
+                    </p>
                     <a href="#" class="btn">Mas info</a>
                 </div>
             </div>
@@ -145,10 +141,10 @@
                 <div class="habilidades-lista">
                     <i class="fa-solid fa-pen-nib"></i>
                     <h3>Diseño</h3>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
-                        Maiores dicta odio at inventore nisi officiis quod, sed quibusdam fugiat 
-                        voluptas fugit placeat. Architecto, repudiandae et laboriosam impedit delectus 
-                        nostrum deserunt.</p>
+                    <p>Ilustaciones realizadas a computador desde Illustrator y edición de
+                    fotografías utilizando como herramienta principal Lightroom y Adobe
+                    Photoshop. Además de realizar modelados en 3D por medio de Blender.
+                    </p>
                     <a href="#" class="btn">Mas info</a>
                 </div>
             </div>
@@ -158,10 +154,10 @@
                 <div class="habilidades-lista">
                     <i class="fa-solid fa-music"></i>
                     <h3>Música</h3>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
-                        Maiores dicta odio at inventore nisi officiis quod, sed quibusdam fugiat 
-                        voluptas fugit placeat. Architecto, repudiandae et laboriosam impedit delectus 
-                        nostrum deserunt.</p>
+                    <p>Gusto por la producción musical con enfoque hacia la producción de 
+                        pop urbano o música orquestal. Además de tener interés por la producción 
+                        y creacion de efectos de sonido para videojuegos.
+                    </p>
                     <a href="#" class="btn">Mas info</a>
                 </div>
             </div>
@@ -170,18 +166,130 @@
                 <div class="habilidades-lista">
                     <i class="fa-solid fa-vr-cardboard"></i>
                     <h3>Realidad Virtual</h3>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
-                        Maiores dicta odio at inventore nisi officiis quod, sed quibusdam fugiat 
-                        voluptas fugit placeat. Architecto, repudiandae et laboriosam impedit delectus 
-                        nostrum deserunt.</p>
+                    <p>Desarrollador y programador de experiencias y aplicaciones inmersivas
+                        las cuales tienen como proposito permitirle al usuario que la utilice,
+                        aprender de manera interactiva y entretenida sobre el tema a tratar.
+                    </p>
                     <a href="#" class="btn">Mas info</a>
                 </div>
             </div>
         </div>
-
-        <p>Hola mundo</p>
-
     </section>
+
+    <!-- EDUCACION Y EXPERIENCIA -->
+    <section id="experiencia" class="experiencia">
+        <div class="contenido-seccion">
+            <h2>Educación y Experiencia</h2>
+            <div class="fila">
+                <div class="col izquierda">
+                    <h3>Educación</h3>
+                    <div class="item izq">
+                        <h4>Desarrollo de Videojuegos</h4>
+                        <span class="casa">SENA</span>
+                        <span class="ciudad">Bogotá D.C</span>
+                    </div>
+
+                    <div class="item izq">
+                        <h4>Ingeniería de Sistemas</h4>
+                        <span class="casa">Fundación Universitaría Konrad Lorenz</span>
+                        <span class="ciudad">Bogotá D.C</span>
+                    </div>
+
+                </div>
+
+                <div class="col derecha">
+                    <h3>Experiencia</h3>
+                    <div class="item der">
+                        <h4>Desarrollador Junior</h4>
+                        <span class="casa">CRITERTEC</span>
+                        <span class="fecha">2019-2020</span>
+                        <p>Desarrollador y programador en experiencias de formación
+                            inmersiva; Realidad Virtual como tecnología principal para
+                            empresas tales como: Gran Tierra Energy y Halliburton, en
+                            temas relacionados con seguridad en el trabajo.</p>
+                            <br>
+                        <p>
+                            Programador en experiencia inmersiva; Realidad Virtual como
+                            tecnología principal para la Contraloría con fines de entretenimiento
+                            en contra de la corrupción.
+                        </p>
+                    </div>
+
+                    <div class="item der">
+                        <h4>Desarrollador Senior</h4>
+                        <span class="casa">ORION</span>
+                        <span class="fecha">2022</span>
+                        <p>Desarrollador y programador en experiencias de formación
+                            inmersiva; Realidad Virtual como tecnología principal para
+                            la empresa Transelca.Además de ser programador para la aplicación educativa 
+                            interactiva GRATUS como desarrollador de sistema de guardado
+                            y cargado para dicha aplicación.</p>
+                    </div>
+
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- PORTAFOLIO -->
+    <section id="portafolio" class="portafolio">
+        <div class="contenido-seccion">
+            <h2>Portafolio</h2>
+            <div class="galeria">
+                <div class="proyecto">
+                    <img src="Imagenes/Iconos/I1.jpg" alt="">
+                    <div class="overlay">
+                        <h3>GRATUS</h3>
+                        <p>Fotografía</p>
+                    </div>
+                </div>
+
+                <div class="proyecto">
+                    <img src="Imagenes/Iconos/I2.jpg" alt="">
+                    <div class="overlay">
+                        <h3>PRODUCTOR MUSICAL</h3>
+                        <p>Fotografía</p>
+                    </div>
+                </div>
+
+                <div class="proyecto">
+                    <img src="Imagenes/Iconos/I3.JPG" alt="">
+                    <div class="overlay">
+                        <h3>SKATER</h3>
+                        <p>Fotografía</p>
+                    </div>
+                </div>
+
+                <div class="proyecto">
+                    <img src="Imagenes/Iconos/I4.JPG" alt="">
+                    <div class="overlay">
+                        <h3>CUIDA A TU MASCOTA</h3>
+                        <p>Fotografía</p>
+                    </div>
+                </div>
+
+                <div class="proyecto">
+                    <img src="Imagenes/Iconos/I5.jpg" alt="">
+                    <div class="overlay">
+                        <h3>METAVERSE</h3>
+                        <p>Fotografía</p>
+                    </div>
+                </div>
+
+                <div class="proyecto">
+                    <img src="Imagenes/Iconos/I6.jpg" alt="">
+                    <div class="overlay">
+                        <h3>3D MODELING</h3>
+                        <p>Fotografía</p>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <script src="script.js"></script>
 
 </body>
 </html>
